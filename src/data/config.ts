@@ -33,6 +33,9 @@ const config = {
   author: "Ayush",
   email: "ayush.sahu2024@nst.rishihood.edu.in",
   site: "https://ayushsahu.com",
+  get ogImg() {
+    return this.site + "/assets/seo/og-image.png";
+  },
 
   social: {
     twitter: "https://x.com/_Ayush/",
