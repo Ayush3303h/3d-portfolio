@@ -1,0 +1,32 @@
+
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# production
+dist/
+
+# env
+.env
+.env.local
+.env.production
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# media previews (optional but recommended)
+*.mp4
+*.gif
+
+
+
+
+
