@@ -48,10 +48,27 @@
 // export { config };
 
 
+export type SiteConfig = {
+  title: string;
+  description: {
+    long: string;
+    short: string;
+  };
+  keywords: string[];
+  author: string;
+  email: string;
+  site: string;
+  ogImg: string;
+  social: {
+    twitter: string;
+    linkedin: string;
+    instagram: string;
+    facebook: string;
+    github: string;
+  };
+};
 
-
-
-const config = {
+export const config: SiteConfig = {
   title: "Ayush | AI Enthusiast",
   description: {
     long: "Explore the portfolio of Ayush, a Computer Science Student with 6 months of experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
@@ -81,10 +98,7 @@ const config = {
   author: "Ayush",
   email: "ayush.sahu2024@nst.rishihood.edu.in",
   site: "https://ayushsahu.com",
-
-  // ✅ FIX: normal property (TypeScript-safe)
   ogImg: "https://ayushsahu.com/assets/seo/og-image.png",
-
   social: {
     twitter: "https://x.com/_Ayush/",
     linkedin: "https://www.linkedin.com/in/ayush-sahu-a44904323/",
@@ -93,6 +107,3 @@ const config = {
     github: "https://github.com/Ayush3303h",
   },
 };
-
-export { config };
-
